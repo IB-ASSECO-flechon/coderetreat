@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\bin\Debug\Tests.dll
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\bin\Debug\Tests.pdb
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\obj\Debug\GameOfLife.csproj.AssemblyReference.cache
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\obj\Debug\GameOfLife.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\obj\Debug\GameOfLife.csproj.CopyComplete
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\obj\Debug\Tests.dll
+\\vmware-host\Shared Folders\franciscolechongutierrez\coderetreat\starting_points\csharp\vs2012\obj\Debug\Tests.pdb

@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="GameOfLifeTests.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountTest.cs" />
+    <Compile Include="DateTimeGenerator.cs" />
+    <Compile Include="IAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
