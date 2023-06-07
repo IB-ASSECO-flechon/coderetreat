@@ -1,32 +1,34 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using NUnit.Framework;
 
 namespace Tests
 {
-	[TestClass]
+	[TestFixture]
 	public class AccountTest
 	{
 		private IAccount account;
 		private readonly Mock<DateTimeGenerator> dateTimeGeneratorMock = new Mock<DateTimeGenerator>();
-		private readonly DateTime dateTime = DateTime.Now;
+		private readonly DateTime dateTimeOne = DateTime.Now;
+		private readonly DateTime dateTimeTwo = DateTime.Now;
 
-		[TestInitialize]
+		[OneTimeSetUp]
 		public void setup()
 		{
 			account = new Account(dateTimeGeneratorMock.Object);
-			dateTimeGeneratorMock.Setup(x => x.GetDateTime()).Returns(dateTime);
-
+			dateTimeGeneratorMock.SetupSequence(x => x.GetDateTime()).Returns(dateTimeOne).Returns(dateTimeTwo);
 		}
 
-		[TestMethod]
+		[Test]
 		public void givenSomeDepositAndWrapShouldReturnStatement()
 		{
 			account.Deposit(500);
 			account.WithDraw(100);
 
 			Assert.AreEqual("Date        Amount  Balance\r\n"
-				+ dateTime.ToString("yyyy-MM-dd") + " 500 500\r\n"
-				+ dateTime.ToString("yyyy-MM-dd") + " -100 400\r\n", account.PrintStatement());
+				+ dateTimeOne.ToString("yyyy-MM-dd HH:mm:ss") + " 500 500\r\n"
+				+ dateTimeTwo.ToString("yyyy-MM-dd HH:mm:ss") + " -100 400\r\n", account.PrintStatement());
 		}
+
 	}
 }

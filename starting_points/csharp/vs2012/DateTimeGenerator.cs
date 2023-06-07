@@ -4,7 +4,7 @@ namespace Tests
 {
 	public class DateTimeGenerator
 	{
-		public DateTime GetDateTime()
+		public virtual DateTime GetDateTime()
 		{
 			return DateTime.Now;
 		}
